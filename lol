@@ -1,0 +1,1 @@
+max idi rabotaj
