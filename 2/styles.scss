@@ -1,0 +1,144 @@
+$fw-light: 400;
+$light-gray: rgb(222,222,222);
+$gray: rgb(169,169,169);
+$black: #333;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:not(i) {
+        font-family: 'Roboto';
+    }
+}
+
+main {
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    margin: 10px;
+}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &__header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 26px;
+        color: $black;
+        letter-spacing: 1px;
+    }
+}
+
+.list {
+
+}
+
+.payment {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px 20px 30px;
+    border-top: 1px solid $light-gray;
+    position: relative;
+    cursor: pointer;
+
+
+    &__logo {
+        max-width: 50px;
+        margin-right: 25px;
+    }
+
+    &__brand {
+        color: $gray;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    &--selected {
+        .payment {
+            &__brand {
+                color: $black;
+            }
+    
+            &__checked {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &:hover {
+        background-color: rgb(241, 241, 241);
+    }
+}
+
+.dots {
+    text-align: center;
+    margin-bottom: 15px;
+
+    .dot {
+        height: 8px;
+        width: 8px;
+        background: $light-gray;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 4px;
+
+        &--active {
+            background: $gray;
+        }
+    }
+}
+
+.btn {
+    color: white;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        max-width: 20px;
+        margin-left: 10px;
+    }
+
+    &--blue {
+        background-color: rgb(100, 141, 217);
+        
+        &:hover {
+            background-color: rgb(97, 142, 238);
+        }
+    }
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
