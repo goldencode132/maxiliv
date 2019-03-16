@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(22, 160, 133);
+
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
+.card {
+    max-width: 600px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    padding: 40px 80px 200px;
+    background-image: url(img/bicycle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 160px;
+    border-radius: 5px;
+    box-shadow: 0 10px 45px -10px rgba(33, 33, 33, .7);
+}
+
+
+.card .card__head {
+    margin-bottom: 30px;
+}
+.card .card__header {
+    margin-bottom: 10px;
+}
+
+.card .card__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card .card__thanx {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products {
+
+} 
+
+.products .product {
+    margin: 20px 0;
+}
+
+.products .product .product__name {
+    font-weight: 500;
+    color: #707070;
+}
+.products .product .product__price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.total {
+
+}
+
+.total .total__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #707070;
+}
+
+.total .total__price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.account {
+    position: relative;
+    cursor: pointer;
+}
+
+.account::before {
+    height: 40px;
+    width: 40px;
+    content: '';
+    display: block;
+    background: #ccc;
+    opacity: .3;
+    transition: all .3s ease;
+    border-radius: 50%;
+}
+
+.account:hover.account:before {
+    transform: scale(1.2);
+}
+
+.account .account__avatar {
+    position: absolute;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: 1px solid rgba(200, 200, 200, .7);
+    border-radius: 50%;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+}

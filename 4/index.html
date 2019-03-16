@@ -9,6 +9,62 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  
+    <main>
+        <section class="container">
+            <div class="messenger">
+                <div class="messenger__head">
+                    <div class="messenger__title">
+                        <div class="messenger__indicator"></div>
+                        Mark Zuckerberg
+                    </div>
+                    <div class="messenger__close">&times;</div>
+                </div>
+                <div class="messenger__body">
+                    <div class="messages">
+                        <div class="message__date">
+                            <div class="message__date-time">Today</div>
+                        </div>
+                        <div class="message message--outcoming message--primary">
+                            <div class="message__time">10:53</div>
+                            <div class="message__body message__body--arrow">
+                                <div class="message__arrow message__arrow--left"></div>
+                                <div class="message__content">Hi, Mark! I made 
+                                    a new design for Messenger App.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message message--incoming message--default">
+                            <div class="message__time">10:57</div>
+                            <div class="message__body">
+                                <div class="message__arrow message__arrow--right"></div>
+                                <div class="message__content">Yo! Send it to my assistant
+                                    and we'll review it during the year.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message message--outcoming message--primary">
+                            <div class="message__time">11:03</div>
+                            <div class="message__body">
+                                <div class="message__arrow message__arrow--left"></div>
+                                <div class="message__content">But Mark...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message message--incoming message--danger">
+                            <div class="message__body">
+                                <div class="message__content">
+                                    You were blocked by user.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="messenger__footer">
+                    <input type="text" name="message" id="message" placeholder="Enter your message" />
+                    <button>Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

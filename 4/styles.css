@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(206, 221, 232), rgb(131, 161, 186));
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.container {
+    padding-top: 50px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.messenger {
+    background-color: white;
+}
+
+.messenger .messenger__head {
+    background-color: rgb(106, 150, 216);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.messenger__close {
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.messenger__close:hover {
+    opacity: 1;
+}
+
+.messenger .messenger__title {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.messenger .messages {
+    border-bottom: 1px solid rgba(200, 200, 200, .5);
+}
+.messenger .message__date {
+    text-align: center;
+    position: relative;
+    height: 20px;
+}
+
+.messenger .message__date::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #ccc;
+}
+
+.messenger .message__date-time {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    padding: 0 10px;
+    transform: translateX(-50%);
+    color: #cecece;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.messenger .messenger__indicator {
+    background-color: white;
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.messenger .messenger__body {
+    padding: 15px 15px 0;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.message.message--incoming {
+    align-items: flex-end;
+}
+
+.message.message--outcoming {
+    align-items: flex-start;
+}
+
+.message.message--danger .message__body {
+    background-color: rgba(200, 100, 100, .5);
+}
+
+.message.message--primary .message__body {
+    background-color: rgb(230, 237, 246);
+}
+.message.message--primary .message__arrow {
+    border-top-color: rgb(230, 237, 246);
+}
+
+.message.message--default .message__body {
+    background-color: rgba(200, 200, 200, .3);
+}
+.message.message--default .message__arrow {
+    border-top-color: rgb(230, 237, 246);
+}
+
+.message .message__arrow {
+    position: absolute;
+    top: 0;
+    border-color: inherit;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid;
+    border-bottom: 5px solid transparent;
+}
+.message .message__arrow.message__arrow--left {
+    left: -5px;
+}
+
+.message .message__arrow.message__arrow--right {
+    right: -5px;
+}
+
+.message .message__body {
+    position: relative;
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.message .message__time {
+    color: #aaaaaa;
+    line-height: 2;
+    font-size: 10px;
+}
+
+.messenger .messenger__footer {
+    padding: 0 15px 5px;
+    display: flex;
+}
+
+.messenger input {
+    flex: 2;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 2;
+    padding: 10px 10px 10px 0;
+}
+
+.messenger button {
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(106, 150, 216);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
