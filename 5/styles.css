@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.container {
+    padding-top: 50px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.ticket {
+    background-color: white;
+    padding: 50px 35px 35px;
+    border-radius: 3px;
+}
+
+.ticket .ticket__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.ticket .ticket__dash {
+    color: rgba(59, 138, 207, .4);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.ticket .ticket__heading {
+    color: rgb(59, 138, 207);
+    font-size: 40px;
+    font-family: 'Prompt';
+    font-weight: 900;
+    line-height: 1;
+}
+
+.ticket .ticket__to {
+    text-align: right;
+}
+
+.ticket .ticket__subheading {
+    color: rgb(160, 160, 160);
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+}
+
+.row.row--margin {
+    margin-bottom: 20px;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.col-33 {
+    width: 33.3%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+
+.list {
+
+}
+
+.list .list__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.info .info__title {
+    color: rgb(160, 160, 160);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.img {
+    max-width: 90%;
+}
+
+.info .info__data {
+    font-weight: bold;
+
+}
+
+
+.text-right {
+    text-align: right;
+}
